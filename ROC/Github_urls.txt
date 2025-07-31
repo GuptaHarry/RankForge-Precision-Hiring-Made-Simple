@@ -1,0 +1,93 @@
+
+ROC HANDLES:
+
+papahritik
+
+pod_sky_81
+
+
+
+
+
+README FILE
+
+difficult :
+https://github.com/GuptaHarry/Harikrishna_Blog_website_hackathon
+
+not found :
+https://github.com/GuptaHarry/REACT_PROJECTS
+
+medium :
+https://github.com/facebook/react
+
+
+best :
+https://github.com/reactjs/react-tabs
+
+
+
+
+
+Metric	      ||        Description
+
+word_count	            Total words
+paragraph_count	        Based on \n\n
+sentiment	            Polarity score via TextBlob
+flesch_score	        Readability score (0–100, higher is easier)
+technologies	        Looks for known tech stack keywords
+complexity	            Tech density (technologies per 100 words)
+rating	                Custom score based on a weighted formula
+
+
+
+ROC Rating calculator
+
+
+fetch_codeforces_data(handle)
+fetch_codechef_data(handle)
+
+
+
+Handle
+
+Rating, Max Rating
+
+Rank, Max Rank
+
+Contribution
+
+Number of contests participated in
+
+
+
+
+📊 2. Evaluating the Candidate
+evaluate_candidate(cf_data, cc_data)
+
+Assigns weights to different parameters:
+  E.g., Codeforces rating is 25% of the total score.
+
+Normalizes values to a 100-point scale:
+  Example: cf_rating_score = rating / 3500 * 100 * weight
+
+Combines Codeforces and CodeChef data into one total score out of 100.
+
+    Returns:
+
+        Total Score
+
+        Expertise Level (e.g., Beginner, Intermediate)
+
+        Score Breakdown per category (like rating, stars, contests)
+
+get_expertise_level(score)
+
+Returns a string label like:
+
+    > 90: Expert
+
+    60–75: Intermediate
+
+
+
+
